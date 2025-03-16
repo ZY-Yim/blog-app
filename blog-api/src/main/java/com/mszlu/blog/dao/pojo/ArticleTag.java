@@ -4,14 +4,14 @@ import lombok.Data;
 
 /**
  * @author yanzhiyu
+ * @date 2025/3/15
  */
 @Data
-public class Tag {
+public class ArticleTag {
 
     private Long id;
 
-    private String avatar;
+    private Long articleId;
 
-    private String tagName;
-
+    private Long tagId;
 }

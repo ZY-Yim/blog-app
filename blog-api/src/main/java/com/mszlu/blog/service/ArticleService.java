@@ -1,10 +1,12 @@
 package com.mszlu.blog.service;
 
 import com.mszlu.blog.vo.Result;
+import com.mszlu.blog.vo.params.ArticleParam;
 import com.mszlu.blog.vo.params.PageParams;
 
-import java.util.List;
-
+/**
+ * @author yanzhiyu
+ */
 public interface ArticleService {
 
     /**
@@ -33,4 +35,13 @@ public interface ArticleService {
      * @return
      */
     Result newArticles(int limit);
+
+    /**
+     * 文章内容
+     * @param articleId
+     * @return
+     */
+    Result findArticleById(Long articleId);
+
+    Result publish(ArticleParam articleParam);
 }

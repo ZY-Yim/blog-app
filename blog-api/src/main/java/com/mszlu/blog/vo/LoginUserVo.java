@@ -10,7 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class LoginUserVo {
-    private Long id;
+    private String id;
 
     private String account;
 

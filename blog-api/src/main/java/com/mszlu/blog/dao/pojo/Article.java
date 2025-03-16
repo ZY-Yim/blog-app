@@ -2,12 +2,15 @@ package com.mszlu.blog.dao.pojo;
 
 import lombok.Data;
 
+/**
+ * @author yanzhiyu
+ */
 @Data
 public class Article {
 
-    public static final int Article_TOP = 1;
+    public static final int ARTICLE_TOP = 1;
 
-    public static final int Article_Common = 0;
+    public static final int ARTICLE_COMMON = 0;
 
     private Long id;
 
@@ -15,9 +18,9 @@ public class Article {
 
     private String summary;
 
-    private int commentCounts;
+    private Integer commentCounts;
 
-    private int viewCounts;
+    private Integer viewCounts;
 
     /**
      * 作者id
@@ -36,8 +39,7 @@ public class Article {
     /**
      * 置顶
      */
-    private int weight = Article_Common;
-
+    private Integer weight;
 
     /**
      * 创建时间
